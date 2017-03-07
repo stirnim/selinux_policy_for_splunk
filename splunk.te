@@ -1,4 +1,4 @@
-policy_module(splunk, 2.0.1)
+policy_module(splunk, 2.0.2)
 
 gen_require(`
     attribute systemprocess;
