@@ -46,7 +46,7 @@ allow splunk_t self:unix_dgram_socket { connected_stream_socket_perms sendto rec
 allow splunk_t self:dir { write remove_name add_name };
 allow splunk_t self:file { execute unlink create execute_no_trans };
 allow splunk_t splunk_rw_t:fifo_file manage_fifo_file_perms;
-allow splunk_t self:capability { sys_resource dac_override sys_ptrace kill fowner fsetid };
+allow splunk_t self:capability { sys_resource dac_override sys_ptrace kill fowner fsetid chown };
 
 ifdef(`distro_rhel7',`
 
